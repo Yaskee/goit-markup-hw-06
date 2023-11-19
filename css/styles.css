@@ -228,6 +228,13 @@ body {
 
 /* <<<<<<<<< /PAGE-HEADER-MOBILE-STYLES >>>>>>>>>*/
 
+
+/* <<<<<<<<< /PAGE-HERO-MOBILE-STYLES >>>>>>>>>*/
+
+
+
+/* <<<<<<<<< /PAGE-/HERO-MOBILE-STYLES >>>>>>>>>*/
+
 @media screen and (max-width: 767px) {
 
     .mobile-open-btn {
@@ -363,6 +370,7 @@ body {
     /* <<<<<<<<< /PAGE-HEADER-TABLET-STYLES >>>>>>>>>*/
     .header-navigation {
         display: flex;
+        align-items: center;
       }
       
       .header-address {
@@ -373,15 +381,10 @@ body {
     width: 766px;
   }
 
-  .header-navigation {
-    display: flex;
-  }
-
-  .header-address {
-    display: flex;
-  }
-
   .mobile-menu {
+    display: none;
+  }
+  .mobile-open-btn-icon {
     display: none;
   }
 }

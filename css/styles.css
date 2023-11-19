@@ -54,18 +54,23 @@ body {
   overflow: hidden;
 }
 
+.accent-color {
+  color: #404bbf;
+}
+
+.container {
+  /*max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;*/
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
-.container {
-  max-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 /* <<<<<<<<< /COMMON STYLES >>>>>>>>>*/
 
 /* <<<<<<<<< PAGE-HEADER-MOBILE-STYLES >>>>>>>>>*/
@@ -99,7 +104,6 @@ body {
   letter-spacing: 0.03em;
   color: #4d5ae5;
   text-transform: uppercase;
-  margin-right: 76px;
 }
 
 .header-logo-words {
@@ -110,40 +114,14 @@ body {
   background-color: transparent;
   padding: 0;
   line-height: 0;
-  border: 1px solid rgba(46, 47, 66, 0.1);
-  padding: 0;
-  line-height: 0;
-  background-color: rgba(231, 233, 252);
+  border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  justify-content: center;
-  align-items: center;
 }
 
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999999999;
-  background-color: #ffffff;
-  transform: translateX(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+/* <<<<<<<<< /PAGE-HEADER-MOBILE-STYLES >>>>>>>>>*/
 
-.mobile-menu.is-open {
-    transform: translateX(0%); 
-}
-
-.mobile-menu-container {
-  position: relative;
-  max-width: 318px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+/* <<<<<<<<< MENU-MOBILE-STYLES >>>>>>>>>*/
 
 .mobile-menu-close-btn {
   position: absolute;
@@ -194,10 +172,6 @@ body {
   line-height: 1.2;
 }
 
-.accent {
-  color: #404bbf;
-}
-
 .footer-icons {
   display: flex;
   gap: 40px;
@@ -226,7 +200,7 @@ body {
   height: 40px;
 }
 
-/* <<<<<<<<< /PAGE-HEADER-MOBILE-STYLES >>>>>>>>>*/
+/* <<<<<<<<< /MENU-MOBILE-STYLES >>>>>>>>>*/
 
 
 /* <<<<<<<<< /PAGE-HERO-MOBILE-STYLES >>>>>>>>>*/
@@ -241,14 +215,9 @@ body {
         background-color: transparent;
         padding: 0;
         line-height: 0;
-        border: 1px solid rgba(46, 47, 66, 0.1);
-        padding: 0;
-        line-height: 0;
-        background-color: rgba(231, 233, 252);
+        border: none;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
           border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        justify-content: center;
-        align-items: center;
       }
 
     .mobile-menu {
@@ -267,7 +236,7 @@ body {
           transform: translateX(0%); 
       }
       
-      .mobile-menu-container {
+      .mobile-menu {
         position: relative;
         max-width: 318px;
         margin-left: auto;
@@ -309,13 +278,18 @@ body {
         line-height: 1.11;
         text-transform: capitalize;
       }
+
+      .mobile-address-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
       
       .mobile-menu-address {
         display: flex;
-        flex-direction: column;
+        justify-content: flex-start;
         gap: 24px;
-        width: 193px;
-        margin-bottom: 48px;
+        max-width: 193px;
       }
       
       .mobile-menu-address-link {
@@ -323,10 +297,6 @@ body {
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
-      }
-      
-      .accent {
-        color: #404bbf;
       }
       
       .footer-icons {
@@ -358,7 +328,7 @@ body {
       }   
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 318px;
     margin-left: auto;
@@ -367,6 +337,11 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+
+  .container {
+    width: 766px;
+  }
+
     /* <<<<<<<<< /PAGE-HEADER-TABLET-STYLES >>>>>>>>>*/
     .header-navigation {
         display: flex;
@@ -377,9 +352,6 @@ body {
         display: flex;
       }
     /* <<<<<<<<< PAGE-HEADER-TABLET-STYLES >>>>>>>>>*/
-  .container {
-    width: 766px;
-  }
 
   .mobile-menu {
     display: none;
@@ -399,5 +371,9 @@ body {
 
   .header-address {
     display: flex;
+  }
+
+  .mobile-open-btn-icon {
+    display: none;
   }
 }

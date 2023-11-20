@@ -158,6 +158,9 @@ button {
 
 /* <<<<<<<<< PAGE-HEADER >>>>>>>>>*/
 
+
+
+/* <<<<<<<<< HERO-SECTION >>>>>>>>>*/
 .hero {
   max-width: 1440px;
   margin-left: auto;
@@ -204,6 +207,9 @@ button {
 .hero-button:focus {
   background-color: #404bbf;
 }
+
+
+/* <<<<<<<<< BENEFITS-SECTION >>>>>>>>>*/
 
 .benefits-title {
   font-size: 20px;

@@ -27,6 +27,7 @@ button {
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   color: #434455;
@@ -59,9 +60,9 @@ body {
 }
 
 .container {
-  /*max-width: 320px;
+  /*max-width: 320px;*/
   margin-left: auto;
-  margin-right: auto;*/
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -142,7 +143,6 @@ body {
 }
 /* <<<<<<<<< /PAGE-HEADER-MOBILE-STYLES >>>>>>>>>*/
 
-
 /* <<<<<<<<< PAGE-HERO-STYLES >>>>>>>>>*/
 .hero {
   max-width: 1440px;
@@ -177,7 +177,6 @@ body {
   padding: 16px 32px;
   justify-content: center;
   letter-spacing: 0.04em;
-  font-weight: 500;
   color: #ffffff;
   background-color: #4d5ae5;
   border-radius: 4px;
@@ -231,7 +230,6 @@ body {
 .mobile-menu-address-link {
   color: #434455;
   font-size: 20px;
-  font-weight: 500;
   line-height: 1.2;
 }
 
@@ -269,13 +267,31 @@ body {
 
 /* <<<<<<<<< /PAGE-/HERO-MOBILE-STYLES >>>>>>>>>*/
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
+  .hero-title {
+    max-width: 288px;
+    height: 160px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
 
+  .hero-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .section {
     padding-top: 96px;
     padding-bottom: 96px;
   }
-  
 
   .header-address {
     display: none;
@@ -285,7 +301,16 @@ body {
     display: none;
   }
 
-  
+  .benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+  }
+
+  .benefits-icon-container {
+    display: none;
+  }
+
   .mobile-open-btn {
     background-color: transparent;
     padding: 0;
@@ -374,7 +399,6 @@ body {
   .mobile-menu-address-link {
     color: #434455;
     font-size: 20px;
-    font-weight: 500;
     line-height: 1.2;
   }
 
@@ -407,6 +431,16 @@ body {
   }
 }
 
+@media screen and (max-width: 1157px) {
+  .benefits-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .container {
     min-width: 318px;
@@ -434,6 +468,14 @@ body {
     gap: 40px;
   }
 
+  .hero-button {
+    background-color: #4d5ae5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+
   /* <<<<<<<<< /PAGE-HEADER-TABLET-STYLES >>>>>>>>>*/
 
   .mobile-menu {
@@ -449,6 +491,19 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
+  }
+
+  .benefits-icon-container {
+    display: none;
+  }
+
+  .benefits-title {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .benefits-list-column {
+    width: calc((100% - 24px) / 2);
   }
 }
 
@@ -478,11 +533,8 @@ body {
     gap: 40px;
     justify-content: space-between;
     font-size: 16px;
-    font-weight: 500;
     color: #2e2f42;
   }
-
- 
 
   .header-address-list {
     display: flex;
@@ -490,14 +542,46 @@ body {
     padding: 24px 0;
   }
 
-/*---- HERO-SECTION ----*/
+  /*---- HERO-SECTION ----*/
 
-.hero {
-  max-width: 1440px;
+  .hero {
+    max-width: 1440px;
 
-  /*---- /HERO-SECTION ----*/
+    /*---- /HERO-SECTION ----*/
 
-  .mobile-open-btn {
-    display: none;
+    .benefits-title {
+      font-size: 20px;
+      line-height: 1.2;
+      color: #2e2f42;
+      margin-bottom: 8px;
+      margin-top: 8px;
+    }
+
+    .benefits-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .benefits-list-column {
+      width: calc((100% - 24px * 3) / 4);
+    }
+
+    .benefits-icon-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 112px;
+      border: 1px solid;
+      padding: 24px 100px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      border-color: #8e8f99;
+      background-color: #f4f4fd;
+    }
+
+    .mobile-open-btn {
+      display: none;
+    }
   }
 }

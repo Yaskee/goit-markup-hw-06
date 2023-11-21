@@ -1,0 +1,210 @@
+@media screen and (min-width: 1158px) {
+    .container {
+      width: 1158px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+      }
+  
+    .header-container {
+      display: flex;
+    }
+  
+    .page-navigation {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-logo {
+        margin-right: 76px;
+      }
+
+    .studio {
+        position: relative;
+        color: #404bbf;
+      }
+  
+    .header-navigation {
+      display: flex;
+      gap: 40px;
+      justify-content: space-between;
+      font-size: 16px;
+      color: #2e2f42;
+    }
+  
+    .header-address-list {
+      display: flex;
+      gap: 40px;
+      flex-direction: row;
+    }
+  
+    .header-contact {
+        font-size: 16px;
+        line-height: 1.17;
+        font-style: normal;
+        font-weight: 400;
+        color: #434455;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    /*---- HERO-SECTION ----*/
+  
+
+.hero {
+    background-color: #2e2f42;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-people-office1.jpg);
+
+    padding: 188px 0;
+ 
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+ screen and (min-resolution: 192dpi) and (min-width: 1158px),
+ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+ .hero {
+  background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+   url(../images/hero-people-office1x2.jpg);
+ }
+}
+  
+      /*---- /HERO-SECTION ----*/
+  
+      .benefits-title {
+        font-size: 20px;
+        line-height: 1.2;
+        color: #2e2f42;
+        margin-bottom: 8px;
+        margin-top: 8px;
+      }
+  
+      .benefits-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+      }
+  
+      .benefits-list-column {
+        width: calc((100% - 24px * 3) / 4);
+      }
+
+      .benefits-text {
+        font-weight: normal;
+      }
+  
+      .benefits-icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 112px;
+        border: 1px solid;
+        padding: 24px 100px;
+        border-radius: 4px;
+        margin-bottom: 8px;
+        border-color: #8e8f99;
+        background-color: #f4f4fd;
+      }
+  
+      .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        border-radius: 0px 0px 4px 4px;
+      }
+      
+      .team-cards {
+        background-color: #ffffff;
+        width: calc((100% - 24px * 3) / 4);
+        border-bottom: 1px;
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+          0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+      }
+      
+      .name-position {
+        padding: 32px 0;
+      }
+      
+      .team-names {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        color: #2e2f42;
+        margin-bottom: 8px;
+      }
+      
+      .team-positions {
+        text-align: center;
+        margin-bottom: 8px;
+      }
+      
+      .team-icons {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+        max-width: 232px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .team-icon-element {
+        width: 40px;
+        height: 40px;
+      }
+      
+      .team-icon-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        background-color: #4d5ae5;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
+      .team-icon-link:hover,
+      .team-icon-link:focus {
+        background-color: #404bbf;
+      }
+      
+      .team-icon {
+        fill: #f4f4fd;
+      }
+
+      .portfolio-list {
+        gap: 48px 24px;
+      }
+      .portfolio-cards {
+        width: calc((100% - 48px)/3);
+      }
+
+      .footer-section {
+        padding: 100px 0;
+      }
+
+      .footer-container {
+        gap: 0;
+      }
+
+      .footer-logo-container {
+        margin-right: 120px;
+      }
+
+      .social-links-container {
+        margin-right: auto;
+      }
+    }
+  

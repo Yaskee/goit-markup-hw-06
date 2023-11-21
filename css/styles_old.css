@@ -526,6 +526,8 @@ button {
   margin-left: 16px;
 }
 
+/* ----- BACKDROP ----- */
+
 .backdrop {
   position: fixed;
   left: 0;
